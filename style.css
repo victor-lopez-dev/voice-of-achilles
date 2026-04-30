@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* GEN */
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 4rem 0;
+}
+
+.row {
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+:root {
+  --background-black: #333333;
+  --accent-color: #F5EDA7;
+  --grey-accent: #8A8A8A;
+  --white: #fff;
+  --black: #000;
+}
+
+/* NAV */
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border: 1px solid red;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+}
+
+
+/* Hero Gallery Carousel*/
+.gallery-track {
+  margin-top: 180px;
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: scroll 50s linear infinite;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.gallery-item img {
+  height: 375px; /* Adjust image size */
+  object-fit: cover;
+  width: auto;
+  display: block;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
