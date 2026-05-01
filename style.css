@@ -400,6 +400,13 @@ nav {
 
 
 /* Built For */
+
+.built-row {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .built-for-row {
   display: flex;
   justify-content: space-between;
@@ -413,14 +420,114 @@ nav {
 .client-point-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 24px;
 }
 
 .client-point-box {
   width: 450px;
 }
 
+.point-title {
+  font-weight: 500;
+}
+
 .point-info {
   margin-top: 16px;
   color: #4A4A4A;
+  font-weight: 300;
+}
+
+.built-for-btn {
+  width: 160px;
+}
+
+.built-for-btn-2 {
+  width: 216px;
+}
+
+.built-for-row .built-for-heading {
+  width: 200px;
+}
+
+#artist-program {
+  width: 100%;
+  height: 1px;
+  background-color: var(--background-black);
+}
+
+.artist-points-container h3 {
+  margin-bottom: 24px;
+}
+
+.artist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.artists-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--background-black);
+}
+
+/* footer */
+footer {
+  border-top: 1px dotted var(--background-black);
+  margin: 0 24px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-company-name {
+  width: 100%;
+  margin: 80px 0 80px 0;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.policy-pages {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer-container {
+  padding: 4rem 0 8px 0;
+}
+
+
+/* 1370px viewport */
+@media (max-width: 1220px){
+  .hero-text-container {
+  bottom: 24px;
+  flex-direction: column;
+  left: 8px;
+  gap: 24px;
+  }
+
+  .card-img-wrapper {
+    width: 120px;
+    height: 140px;
+  }
+
+  .card-number {
+    font-size: 60px;
+    bottom: 50px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .built-for-row h2 {
+    width: 200px;
+  }
 }
