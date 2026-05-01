@@ -373,3 +373,54 @@ nav {
   width: 300px;
 }
 
+.curation-text-wrapper {
+  display: flex;
+  gap: 32px;
+  margin: 48px 0 48px 0;
+}
+
+.curation-text {
+  width: 550px;
+}
+
+.curation-img-wrapper {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.curation-img-wrapper img {
+  width: 100%;
+  transition: scale 300ms ease;
+}
+
+.curation-img-wrapper:hover img {
+  scale: 1.02;
+}
+
+
+/* Built For */
+.built-for-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.built-for-row h2 {
+  width: 300px;
+}
+
+.client-point-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.client-point-box {
+  width: 450px;
+}
+
+.point-info {
+  margin-top: 16px;
+  color: #4A4A4A;
+}
