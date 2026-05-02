@@ -107,17 +107,69 @@ nav {
   font-size: 14px;
 }
 
-/* Hamburger */
-#hamburger-btn {
+/* Hamburger / Modal */
+#hamburger-btn,
+#close-btn {
   background-color: transparent;
-  color: var(--white);
   border: none;
-  display: none;
-  opacity: 0;
 }
 
-#hamburger-btn:hover {
+#hamburger-btn {
+  color: var(--white);
+  opacity: 0;
+  display: none;
+}
+
+#close-btn {
+  color: var(--black);
+}
+
+#hamburger-btn:hover,
+#close-btn {
   cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: var(--accent-color);
+  z-index: 101;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 300ms ease, height 300ms ease, visibility 0s ease 300ms;
+}
+
+.modal-list {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: var(--black);
+  font-size: 14px;
+}
+
+.modal.display-modal {
+  height: 250px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease, height 300ms ease, visibility 0s ease 0ms;
+}
+
+#name {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  color: var(--black);
 }
 
 /* HOME (HERO) */
@@ -640,6 +692,14 @@ footer {
 
   .sub-heading {
     width: 100%;
+  }
+
+  .artists-line {
+    width: 80%;
+  }
+
+  #built-for .container {
+    padding-top: 1rem;
   }
 }
 

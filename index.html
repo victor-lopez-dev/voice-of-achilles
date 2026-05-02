@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <title>Voice of Zues</title>
 </head>
 <body>
@@ -14,11 +14,9 @@
         <span>Voice of Zues</span>
         
         <ul class="nav-list">
-          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="index.html">Home</a></li>
 
           <li class="nav-link"><a href="#featured-artists">Featured Artists</a></li>
-          
-          <li class="nav-link"><a href="#artist-program">For Artists</a></li>
 
           <li class="nav-link text-highlight"><a href="#artist-program">Get Featured</a></li>
         </ul>
@@ -28,7 +26,31 @@
         </button>
       </div>
     </nav>
+
+    <div class="modal">
+      <div class="modal-top">
+        <p id="name">Voice of Zues</p>
+        <button id="close-btn">
+          Close
+        </button>
+      </div>
+
+      <ul class="modal-list">
+        <li>
+          <a href="#home" class="modal-link">Home</a>
+        </li>
+
+        <li>
+          <a href="#featured-artists" class="modal-link">Featured Artists</a>
+        </li>
+
+        <li>
+          <a href="#artist-program" class="modal-link">Get Featured</a>
+        </li>
+      </ul>
+    </div>
   </header>
+
 
   <main>
     <section id="home">
@@ -385,8 +407,6 @@
                       Less noise, more focus. Your work is not buried. It is given space to be understood.
                     </p>
                   </div>
-                  
-                  <a href="#" class="CTA-button CTA-button-accent built-for-btn">Find your artist</a>
                 </div>
               </div>
 
