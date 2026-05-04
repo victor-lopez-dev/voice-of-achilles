@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --backgroundColor: #EFEFEF;
+  --accentColor: #F06350;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+nav {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 101;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+}
+
+.heading-alt {
+  text-align: start;
+  font-weight: 200;
+  font-size: 32px;
+}
+
+.sub-heading {
+  font-weight: 200;
+  text-align: center;
+  width: 50%;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.sub-heading-alt {
+  font-size: 14px;
+  width: 600px;
+  font-weight: 200;
+  text-align: start;
+  margin-top: 8px;
+}
+
+.orange-text {
+  color: var(--accentColor);
+}
+
+.container {
+  padding: 4rem 0;
+}
+
+.row {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.book-now-btn {
+  color: #fff;
+  background-color: var(--accentColor);
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 100vh;
+}
+
+.video-container {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 100;
+}
+
+.artist-video {
+  width: 100%;
+}
+
+.back-pics {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+}
+
+.set-1 {
+  left: 32px;
+}
+
+.set-2 {
+  right: 32px;
+}
+
+.hero-title {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.text-button-container {
+  position: absolute;
+  bottom: 100px;
+  left: 24px;
+  right: 24px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-location {
+  position: absolute;
+  right: 24px;
+  font-size: 10px;
+  font-weight: 400;
+  width: 150px;
+  bottom: 24px;
+}
+
+
+/* GALLERY */
+.gallery-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gallery {
+  background-color: #333333;
+  overflow: hidden;
+  color: #fff;
+}
+
+
+/* gallery track */
+.gallery-track {
+  margin-top: 120px;
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.gallery-item img {
+  height: 375px; /* Adjust image size */
+  object-fit: cover;
+  width: auto;
+  display: block;
+}
+
+/* Title styling below image */
+.gallery-item p {
+  margin-top: 8px;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+/* Auto scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
+
+/* JEJU */
+.jeju-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.jeju-bio {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.jeju-info-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.info-text {
+  font-weight: 200;
+}
+
+.jeju-offer-list {
+  margin: 0 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 200;
+  font-style: italic;
+  list-style: square;
+}
+
+.jeju-img-container {
+  width: 400px;
+}
+
+.jeju-img {
+  width: 100%;
+  display: block;
+}
+
+
+/* REVIEWS */
+#reviews {
+  background-color: #333333;
+}
+
+.client-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.quote-box {
+  border: .5px solid #828282;
+  padding: 24px;
+}
+
+.quote {
+  font-weight: 200;
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+
+/* Working with JEJU */
+.step-by-step-container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.step-box {
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background-color: var(--accentColor);
+  color: #fff;
+}
+
+.step-name {
+  font-size: 24px;
+}
+
+.step-info {
+  font-size: 14px;
+}
+
+
+/* footer */
+#footer {
+  position: relative;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-container h3 {
+  margin-bottom: 32px;
+}
+
+.contact-container {
+  position: relative;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 400px;
+}
+
+.contact-list-link {
+  list-style-type: none;
+  border: .5px solid #828282;
+  padding: 8px;
+}
+
+.contact-link {
+  color: #000;
+}
+
+.contact-name {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.contact-info {
+  font-weight: 200;
+  margin-top: 4px;
+}
+
+.threed-jeju-container {
+  width: 400px;
+  position: relative;
+}
+
+.threed-jeju {
+  width: 100%;
+  display: block;
+}
+
+.copyright {
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 200;
+  left: 24px;
+  bottom: -50px;
+}
+
+.footer-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.promotion {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #f06350;
+  z-index: 100;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+
+/* viewport 1180px */
+@media (max-width: 1180px) {
+  .back-pics {
+    width: 300px;
+  }
+
+  .testimonial-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-by-step-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .sub-heading {
+    width: 80%;
+  }
+
+  .jeju-info-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+    .heading-alt {
+    text-align: center;
+  }
+
+  .jeju-bio {
+    text-align: center;
+  }
+
+
+  .jeju-info-container {
+    align-items: center;
+    width: 90%;
+  }
+  
+  .promotion {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .video-container {
+    width: 95%;
+    top: 75px;
+    height: 450px;
+  }
+
+  .back-pics {
+    visibility: hidden;
+  }
+
+  .text-button-container {
+    bottom: 80px
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-location {
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .testimonial-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .step-by-step-container {
+    grid-template-columns:  repeat(1, 1fr);
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .threed-jeju-container {
+    width: 100%;
+  }
+
+  .contact-list {
+    width: 100%;
+  }
+
+  .jeju-img-container {
+    width: 100%;
+  }
+}
