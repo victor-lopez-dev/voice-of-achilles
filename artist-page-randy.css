@@ -9,8 +9,9 @@
 }
 
 :root {
-  --backgroundColor: #EFEFEF;
-  --accentColor: #F06350;
+  --backgroundColor: #E8E8E8;
+  --accentColor: #000;
+  --grey-color: #c0c0c0;
 }
 
 body {
@@ -171,7 +172,8 @@ a {
   display: flex;
   gap: 32px;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 32s linear infinite;
+  overflow: hidden;
 }
 
 .gallery-item {
@@ -200,7 +202,7 @@ a {
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-50% - 8px));
+    transform: translateX(-50%);
   }
 }
 
@@ -293,7 +295,7 @@ a {
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-  background-color: var(--accentColor);
+  background-color: #000000;
   color: #fff;
 }
 
@@ -391,9 +393,9 @@ a {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #f06350;
+  background-color: #F5EDA7;
   z-index: 100;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
