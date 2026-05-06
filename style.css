@@ -537,6 +537,10 @@ nav {
   background-color: var(--background-black);
 }
 
+.join-team-text {
+  margin-bottom: 32px;
+}
+
 /* footer */
 footer {
   border-top: 1px dotted var(--background-black);

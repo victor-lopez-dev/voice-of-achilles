@@ -10,7 +10,7 @@
 
 :root {
   --backgroundColor: #E8E8E8;
-  --accentColor: #C9A227;
+  --accentColor: #D49A00;
 }
 
 body {
@@ -396,7 +396,7 @@ a {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #b99c0e;
+  background-color: #D49A00;
   z-index: 100;
   color: #fff;
   display: flex;
