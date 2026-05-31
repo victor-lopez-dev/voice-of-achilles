@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+   font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --accent-color: #F5EDA7;
+  --artist-color: #000;
+  --grey-secondary-text-color: #606060;
+}
+
+body {
+  background-color: #ececec;
+}
+
+.container {
+  padding: 8rem 0;
+}
+
+.row {
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1500px;
+}
+
+.CTA-btn {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--artist-color);
+}
+
+.main-CTA-btn {
+  background-color: var(--artist-color);
+  color: #fff;
+}
+
+.secondary-CTA-btn {
+  border: 1px solid #000;
+  color: #000;
+}
+
+nav {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  border: 1px solid #949494;
+  border-radius: 8px;
+  background-color: #ffea002f;
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home-link {
+  color: #000;
+}
+
+#artist-intro {
+  position: relative;
+  width: 100%;
+  height: 1500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.video-wrapper {
+  position: sticky;
+  top: 160px;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.artist-video {
+  display: block;
+  width: 100%;
+}
+
+.artist-panel {
+  height: calc(100% - 160px);
+  margin-top: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.artist-bio-container {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.styles {
+  margin-top: 4px;
+  color: #000;
+}
+
+.styles,
+.location {
+  font-size: 14px;
+  color: var(--grey-secondary-text-color);
+}
+
+.summary {
+  margin: 4px 0 16px 0;
+}
+
+.artist-story {
+  width: 100%;
+  font-size: 14px;
+}
+
+.keypoints-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.keypoint {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #c6c6c6;
+}
+
+.keypoint-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.panel-btn-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+/* Gallery */
+.gallery-row {
+  position: relative;
+  background-color: #dadada;
+  padding: 48px 0;
+  border: 1px solid red;
+}
+
+.swiper {
+  width: 800px;
+  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 8px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+
+}
