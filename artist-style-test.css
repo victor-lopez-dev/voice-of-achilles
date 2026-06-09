@@ -9,187 +9,509 @@
 }
 
 :root {
-  --accent-color: #F5EDA7;
   --artist-color: #000;
-  --grey-secondary-text-color: #606060;
+  --gold-color: #FFD900;
+  --black: #000;
+  --white: #fff;
+  --background-color: #fff;
+  --secondary-text: #5B5B5B;
+  --corner-radius: 4px;
+  --process-background: #E7E7E7;
+  --gloss-grey: rgba(225, 225, 225, 0.75);
 }
 
 body {
-  background-color: #ececec;
+  background-color: var(--background-color);
+}
+
+/* GEN */
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
 }
 
 .container {
   padding: 8rem 0;
+  margin-top: 8px;
 }
 
 .row {
-  width: 100%;
   padding: 0 24px;
+  width: 100%;
   max-width: 1500px;
+  margin: 0 auto;
 }
 
+h2 {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+/* Buttons */
 .CTA-btn {
-  padding: 4px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--artist-color);
+  padding: 8px;
+  width: fit-content;
+  border-radius: var(--corner-radius);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--black);
 }
 
-.main-CTA-btn {
-  background-color: var(--artist-color);
-  color: #fff;
-}
-
-.secondary-CTA-btn {
-  border: 1px solid #000;
+.CTA-btn:hover {
+  backdrop-filter: blur(2px);
+  background-color: #ffffff00;
   color: #000;
 }
 
+.main-CTA {
+  background-color: var(--artist-color);
+  color: var(--white);
+}
+
+.main-CTA:hover .btn-circle {
+  background-color: var(--black);
+}
+
+.btn-circle,
+.secondary-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 25px;
+  transition: background-color 300ms ease;
+}
+
+.btn-circle {
+  background-color: var(--white);
+}
+
+.secondary-CTA,
+.main-CTA {
+  transition: color 300ms ease, background-color 300ms ease;
+}
+
+.secondary-CTA:hover .secondary-circle {
+  background-color: var(--white);
+}
+
+/* PROMO */
+.promo {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background-color: var(--gold-color);
+  border-radius: var(--corner-radius);
+  padding: 8px;
+  z-index: 100;
+  text-align: center;
+}
+
+/* navigation */
 nav {
+  width: 100%;
   position: fixed;
   top: 24px;
-  left: 24px;
-  right: 24px;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-  border: 1px solid #949494;
-  border-radius: 8px;
-  background-color: #ffea002f;
-  backdrop-filter: blur(4px);
-  z-index: 100;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.home-link {
-  color: #000;
-}
-
-#artist-intro {
-  position: relative;
-  width: 100%;
-  height: 1500px;
-  max-width: 1000px;
-  margin: 0 auto;
+  left: 0;
+  right: 0;
   padding: 0 24px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  z-index: 101;
+  display: flex;
   justify-content: center;
+  gap: 24px;
 }
 
-.video-wrapper {
+.achilles-wrapper {
+  width: 48px;
+}
+
+.achilles-icon {
+  width: 32px;
+}
+
+.nav-list {
+  gap: 16px; 
+  padding: 0 24px;
+}
+
+.nav-list,
+.achilles-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gloss-grey);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  height: 48px;
+  border-radius: var(--corner-radius);
+  transition: background-color 300ms ease;
+}
+
+.achilles-wrapper:hover {
+  background-color: var(--gold-color);
+}
+
+/* Artist hero */
+.section-sticky {
+  position: relative;
+  padding: 24px;
+  height: fit-content; /*Height for parent text container*/
+}
+
+#artist {
   position: sticky;
-  top: 160px;
+  top: 100px;
+  z-index: 1;
+  height: 100vh;
+}
+
+.artist-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.display-wrapper {
   width: 400px;
   height: 500px;
+  border-radius: var(--corner-radius);
   overflow: hidden;
-  border-radius: 4px;
 }
 
-.artist-video {
-  display: block;
+.artist-display {
   width: 100%;
 }
 
-.artist-panel {
-  height: calc(100% - 160px);
-  margin-top: 160px;
-
+.artist-info-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.artist-bio-container {
-  width: 100%;
   height: 500px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.styles {
-  margin-top: 4px;
-  color: #000;
+.artist-summary {
+  margin: 8px 0 16px 0;
+  width: 400px;
 }
 
-.styles,
+.artist-name {
+  font-size: 32px;
+  font-weight: 400;
+}
+
 .location {
-  font-size: 14px;
-  color: var(--grey-secondary-text-color);
+  color: var(--secondary-text);
+  font-size: 12px;
 }
 
-.summary {
-  margin: 4px 0 16px 0;
+/* About Artist */
+#about-artist {
+  position: relative;
+  z-index: 10;
+  background-color: var(--white);
 }
 
-.artist-story {
-  width: 100%;
-  font-size: 14px;
-}
-
-.keypoints-wrapper {
+.text-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 }
 
-.keypoint {
-  background-color: #fff;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #c6c6c6;
-}
-
-.keypoint-name {
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.panel-btn-wrapper {
-  display: flex;
-  gap: 16px;
+.about-text {
+  width: 600px;
+  line-height: 24px;
 }
 
 /* Gallery */
+#gallery {
+  background-color: var(--white);
+}
+
 .gallery-row {
+  height: fit-content;
   position: relative;
-  background-color: #dadada;
-  padding: 48px 0;
-  border: 1px solid red;
+  padding: 0;
 }
 
-.swiper {
-  width: 800px;
-  height: 600px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-radius: 8px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-slide img {
-  display: block;
+.gallery-text-container {
+  position: sticky;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-
+.portfolio {
+  font-size: 120px;
 }
+
+.gallery-text {
+  width: 100%;
+  max-width: 800px;
+}
+
+.tattoo-container {
+  padding: 32px 0;
+  position: relative;
+  z-index: 10;
+  margin-top: 80px;
+  background-color: #ffffffb1;
+  backdrop-filter: blur(4px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.tattoo-wrapper {
+  width: 400px;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: var(--corner-radius);
+}
+
+.tattoo-img {
+  width: 100%;
+}
+
+.gallery-CTA {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Reviews */
+.review-wrapper {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.quote-box {
+  border: .5px solid var(--background-black);
+  border-radius: var(--corner-radius);
+}
+
+.quote {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+
+/* Process */
+#process {
+  background-color: var(--process-background);
+}
+
+.process-wrapper {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.process-card {
+  background-color: var(--white);
+  border-radius: 4px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.process-icon {
+  width: 40px;
+}
+
+.process-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.process-info {
+  color: var(--secondary-text);
+}
+
+/* Final CTA */
+.CTA-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.CTA-text {
+  font-size: 80px;
+}
+
+.CTA-info {
+  margin-bottom: 16px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  background-color: var(--white);
+  border-top: 1px solid var(--gloss-grey);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list,
+.copyright-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+.footer-company-name {
+  width: 100%;
+  margin: 80px 0 80px 0;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.policy-pages {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer-container {
+  padding: 4rem 0 4rem 0;
+}
+
+
+/* Viewport 1000px */
+@media (max-width: 1000px) {
+  .section-sticky, nav {
+    padding: 8px;
+  }
+
+  nav {
+    gap: 8px;
+    top: 8px;
+  }
+
+  .review-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .process-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 748px) {
+  .artist-container {
+    flex-direction: column;
+  }
+
+  .display-wrapper {
+    width: 300px;
+    height: 400px;
+  }
+
+  .artist-info-container {
+    height: fit-content;
+  }
+
+  .artist-summary-container {
+    margin-top: 16px;
+  }
+
+  .artist-summary {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .portfolio {
+    font-size: 80px;
+  }
+
+  .gallery-text {
+    max-width: 500px;
+  }
+
+  p, a {
+    font-size: 12px;
+  }
+
+  .CTA-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  #artist {
+    top: 65px;
+  }
+
+  .portfolio {
+    font-size: 32px;
+    max-width: 300px;
+  }
+
+  .tattoo-wrapper {
+    width: 75%;
+  }
+
+  .process-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copyright-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .achilles-icon {
+    width: 24px;
+  }
+
+  .achilles-wrapper {
+    height: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .display-wrapper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .artist-container {
+    gap: 8px;
+  }
+}
+
+

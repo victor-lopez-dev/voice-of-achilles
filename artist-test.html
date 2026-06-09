@@ -5,118 +5,271 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artist Test</title>
   <link rel="stylesheet" href="artist-style-test.css">
-
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
-
-  <script src="carousel.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="/" class="home-link">Voice of Zues</a>
+      <a href="#home">
+        <figure class="achilles-wrapper">
+          <img src="assets/achilles-helmet.svg" class="achilles-icon" alt="achilles helmet icon">
+        </figure>
+      </a>
 
-      <a href="#" class="main-CTA-btn CTA-btn">Book Now</a>
-    </nav>
+      <a href="#" class="CTA-btn main-CTA">
+        <div class="btn-circle"></div>
+        Book Now
+      </a>
   </header>
 
   <main>
-    <section id="artist-intro">
-      <div class="video-wrapper">
-        <video src="artists/randy-profile-video.MOV" class="artist-video" autoplay loop muted preload="auto" webkit-playsinline playsinline></video>
-      </div>
+    <a href="#" class="promo">
+      Promo: $200 off $800–$1,200 sessions | $400 off $1,600+ sessions
+    </a>
+  
+    <div class="section-sticky">
+      <section id="artist">
+        <div class="artist-container">
+          <figure class="display-wrapper">
+            <video src="artists/randy-profile-video.MOV" class="artist-display" autoplay muted loop playsinline webkit-playsinline preload="auto"></video>
+          </figure>
+
+          <div class="artist-info-container">
+            <div>
+              <h1 class="artist-name">Randy</h1>
+              <p>
+                Fine Line and Traditional Tattoo Artist
+              </p>
+            </div>
+
+            <div class="artist-summary-container">
+              <p class="location">Based in Rockville, MD</p>
+
+              <p class="artist-summary">Black & grey and color realism tattoos crafted with precision, depth, and intention — designed for clients seeking bold, lasting work.</p>
+
+              <a href="" class="CTA-btn main-CTA">
+                <div class="btn-circle"></div>
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-artist">
+        <div class="container">
+          <div class="row">
+            <div class="text-container">
+              <p class="about-text">
+                I'm a Maryland-based tattoo artist dedicated to doing tattoos the right way. Built for longevity, not immediate impact. Every piece I create is designed with the future in mind, focused on strong application, solid fundamentals, and clean healing. 
+              </p>
+              
+              <p class="about-text">
+                My work ranges from traditional blackwork and color to fine-line and black grey realism, from small, detailed pieces to large-scale projects. No matter the size or style, I bring my own bold touch to ensure the tattoo stays readable and stands the test of time. 
+              </p>
+            </div>
+          </div>
+        </div>
         
-      <div class="artist-panel">
-        <div class="artist-bio-container">
-          <div class="name-container">
-            <h1>Randy</h1>
-            <p class="styles">[fine line] [traditional]</p>
-          </div>
-          
-          <div class="location-container">
-            <p class="location">Rockville, MD</p>
-            <p class="summary">Black & grey and color realism tattoos crafted with precision, depth, and intention — designed for clients seeking bold, lasting work.</p>
-            
-            <a href="#" class="CTA-btn main-CTA-btn">Start Your Custom Piece</a>
-          </div>
-        </div>
-
-        <div class="artist-bio-container">
-          <div class="name-container">
-            <p class="artist-story">I'm a Maryland-based tattoo artist dedicated to doing tattoos the right way. Built for longevity, not immediate impact. Every piece I create is designed with the future in mind, focused on strong application, solid fundamentals, and clean healing. My work ranges from traditional blackwork and color to fineline and black grey realism, from small, detailed pieces to large-scale projects. No matter the size or style, I bring my own bold touch to ensure the tattoo stays readable and stands the test of time.</p>
-          </div>
-          
-          <div class="location-container">
-            <div class="keypoints-wrapper">
-              <div class="keypoint">
-                <p class="keypoint-name">Specialty</p>
-                <p class="keypoint-text">Traditional | fine line</p>
+        <section id="gallery">
+          <div class="container">
+            <div class="row gallery-row">
+              <div class="gallery-text-container">
+                <h2 class="portfolio">PORTFOLIO</h2>
+                
+                <p class="gallery-text">Explore a selection of custom pieces created for clients who trusted Randy with their vision. Every tattoo is designed with intention, detail, and longevity in mind.</p>
+              </div>
+              
+              <div class="tattoo-container">
+                <figure class="tattoo-wrapper">
+                  <img src="randy-tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy" class="tattoo-img" loading="lazy">
+                </figure>
+                
+                <figure class="tattoo-wrapper">
+                  <img src="randy-tattoos/randy-back-tattoo.webp" alt="Back tattoo by Randy" class="tattoo-img" loading="lazy">
+                </figure>
+                
+                <figure class="tattoo-wrapper">
+                  <img src="randy-tattoos/randy-betty.webp" alt="Betty tattoo by Randy" class="tattoo-img" loading="lazy">
+                </figure>
+                
+                <figure class="tattoo-wrapper">
+                  <img src="randy-tattoos/randy-car.webp" alt="Car tattoo by Randy" class="tattoo-img" loading="lazy">
+                </figure>
+                
+                <figure class="tattoo-wrapper">
+                  <img src="randy-tattoos/randy-flowers.webp" alt="Flower tattoo by Randy" class="tattoo-img" loading="lazy">
+                </figure>
+                
+                <figure class="tattoo-wrapper">
+                  <img src="randy-tattoos/randy-whale.webp" alt="Whale tattoo by Randy" class="tattoo-img" loading="lazy">
+                </figure>
               </div>
 
-              <div class="keypoint">
-                <p class="keypoint-name">Focus</p>
-                <p class="keypoint-text">Long-lasting work</p>
-              </div>
-
-              <div class="keypoint">
-                <p class="keypoint-name">Approach</p>
-                <p class="keypoint-text">Strong application, and clean healing</p>
-              </div>
             </div>
- 
-            <div class="panel-btn-wrapper">
-              <a href="#" class="CTA-btn main-CTA-btn">Start Your Project</a>
-              <a href="#" class="CTA-btn 
-              secondary-CTA-btn">Explore My Work</a>
-            </div>
-          
+              <div class="gallery-CTA">
+                <p>Inspired by the work?</p>
+  
+                <a href="" class="CTA-btn main-CTA">
+                  <div class="btn-circle"></div>
+                  Start your project
+                </a>
+              </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </section>
+    </div>
 
-    <section id="gallery">
+
+    <section id="Reviews">
       <div class="container">
-        <div class="row gallery-row">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="tattoos/randy-back-tattoo.webp" />
-              </div>
-              <div class="swiper-slide">
-                <img src="tattoos/randy-betty.webp" />
-              </div>
-              <div class="swiper-slide">
-                <img src="tattoos/randy-car.webp" />
-              </div>
-              <div class="swiper-slide">
-                <img src="tattoos/randy-flowers.webp" />
-              </div>
-              <div class="swiper-slide">
-                <img src="tattoos/randy-koy-fish.webp" />
-              </div>
-              <div class="swiper-slide">
-                <img src="tattoos/randy-whale.webp" />
-              </div>
-            </div>
-          </div>
+        <div class="row client-row">
 
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <h2>Real experiences from clients</h2>
+          <div class="review-wrapper">
+            <div class="quote-box">
+              <p class="quote">
+                “Had my piece done by <strong>Randy</strong> and i’m so happy with the way it came out. He has an incredible eye for detail and was able to translate my vision perfectly. He usually does traditional work, but is very versatile and open to doing any other styles. It was difficult to find an artist in the area who would do this specific style, so i’m really happy to have found him. I’m excited to work with him again on another piece!”
+              </p>
+
+              <p class="quote">Katherine L</p>
+            </div>
+
+            <div class="quote-box">
+              <p class="quote">
+                “Great experience getting tattooed by <strong>Randy!</strong> He helped me figure out the final idea for my traditional piece and was super flexible throughout the whole process. Really happy with how it turned out and definitely recommend him for traditional tattoos. Looking forward to working with him again.”
+              </p>
+
+              <p class="quote">Cynthia B</p>
+            </div>
+
+            <div class="quote-box">
+              <p class="quote">
+                “I had an amazing experience with <strong>Randy</strong> as my tattoo artist. From start to finish, he was incredibly professional and made me feel completely at ease. I came to him with an idea in my head, and he not only understood my vision but brought it to life with an incredible design that exceeded my expectations. His skill and creativity are top-notch, and I couldn't be happier with the result. Highly recommend Randy to anyone looking for a talented and professional tattoo artist!”
+              </p>
+
+              <p class="quote">Damien H</p>
+            </div>
         </div>
       </div>
     </section>
 
-    <section id="reviews">
+    <section id="process">
       <div class="container">
         <div class="row">
+          <h2>The process when working with me</h2>
 
+          <div class="process-wrapper">
+            <!-- consultation -->
+            <div class="process-card">
+              <img src="assets/consultation-img.svg" alt="" class="process-icon">
+
+              <div class="process-info-container">
+                <p class="process-name">1. Consultation</p>
+                <p class="process-info">We start with a conversation. You share your idea, references, and placement preferences. This step helps define the foundation of the piece.</p>
+              </div>
+            </div>
+
+            <!-- planning -->
+
+            <div class="process-card">
+              <img src="assets/planning-img.svg" alt="" class="process-icon">
+
+              <div class="process-info-container">
+                <p class="process-name">2. Direction & Planning</p>
+                <p class="process-info">Based on the consultation, the overall direction is established. Size, placement, flow, and structure are considered to ensure the design fits the body naturally.</p>
+              </div>
+            </div>
+
+            <!-- Concept -->
+
+            <div class="process-card">
+              <img src="assets/concept-img.svg" alt="" class="process-icon">
+
+              <div class="process-info-container">
+                <p class="process-name">3. Concept & Drawing</p>
+                <p class="process-info">The design is developed from the agreed direction. This includes composition, line work, and visual balance. Each piece is created specifically for you.</p>
+              </div>
+            </div>
+
+            <!-- Refinement -->
+
+            <div class="process-card">
+              <img src="assets/refinement-img.svg" alt="" class="process-icon">
+
+              <div class="process-info-container">
+                <p class="process-name">4. Refinement</p>
+                <p class="process-info">The design is reviewed and adjusted as needed. Small refinements are made to improve clarity, proportion, and overall cohesion.</p>
+              </div>
+            </div>
+
+            <!-- tattoo -->
+
+            <div class="process-card">
+              <img src="assets/tattoo-img.svg" alt="" class="process-icon">
+
+              <div class="process-info-container">
+                <p class="process-name">5. The Tattoo</p>
+                <p class="process-info">On the day of the appointment, the final design is applied. The focus is on precision, consistency, and comfort throughout the session.</p>
+              </div>
+            </div>
+
+            <!-- Aftercare -->
+
+            <div class="process-card">
+              <img src="assets/aftercare-img.svg" alt="" class="process-icon">
+
+              <div class="process-info-container">
+                <p class="process-name">6. Aftercare and Continuation</p>
+                <p class="process-info">Aftercare instructions are provided to support proper healing. Some pieces may be revisited later for touch-ups or additional work if desired.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <section id="final-CTA">
+      <div class="container">
+        <div class="row CTA-row">
+          <h2 class="CTA-text">Ready to work with Randy?</h2>
+
+          <p class="CTA-info">Fill out the form and get started on your project.</p>
+
+          <a href="" class="CTA-btn main-CTA">
+            <div class="btn-circle"></div>
+            Start your project
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="row">
+          <ul class="footer-list">
+            <li><a href="#home" class="footer-link">Back to Top</a></li>
+
+            <li><a href="#featured-artists" class="footer-link">Featured Artists</a></li>
+
+            <li><a href="#artist-program" class="footer-link">For Artists</a></li>
+            
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+
+          <img src="assets/voiceofachilles.svg" alt="" class="footer-company-name">
+
+          <div class="copyright-wrapper">
+            <p class="copyright">
+              Voice of Achilles - All Rights Reserved
+            </p>
+            <div class="policy-pages">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
