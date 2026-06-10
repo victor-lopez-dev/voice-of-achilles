@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-  padding: 4rem 0;
+  padding: 8rem 0;
   margin-top: 8px;
 }
 
@@ -33,165 +33,155 @@ img {
 
 :root {
   --background-black: #333333;
-  --accent-color: #F5EDA7;
-  --grey-accent: #a9a9a9;
+  --gold-color: #FFD900;
   --white: #fff;
   --black: #000;
-  --artist-card-background: #F2F2F2;
+  --artist-card-background: #f2f2f281;
+  --secondary-text: #5B5B5B;
+  --gloss-grey: rgba(225, 225, 225, 0.75);
+  --corner-radius: 4px;
+  --grey-accent: #a9a9a9;
 }
 
-.dark-highlight {
-  color: var(--grey-accent);
-}
-
-.text-highlight {
-  color: var(--accent-color);
-}
-
-.heading {
-  font-size: 48px;
-}
-
-.centered-text {
-  text-align: center;
-}
-
-.sub-heading {
-  width: 500px;
-  margin-top: 8px;
-}
-
-/* Buttons */
-.CTA-button {
-  padding: 8px 16px;
-  border-radius: 4px;
-}
-
-.CTA-button-accent {
-  background-color: var(--accent-color);
-  color: var(--black);
-}
-
-.CTA-button-secondary {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-
-/* NAV */
+/* navigation */
 nav {
+  width: 100%;
   position: fixed;
-  z-index: 100;
-  top: 0;
+  top: 24px;
   left: 0;
   right: 0;
-  width: 100%;
+  z-index: 1001;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 24px;
-  color: var(--white);
-  background-color: var(--background-black);
+  align-items: center;
+  gap: 32px;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 99%;
+.achilles-wrapper {
+  width: 48px;
+}
+
+.achilles-icon {
+  width: 32px;
 }
 
 .nav-list {
+  gap: 16px; 
+  padding: 0 24px;
+}
+
+.nav-list,
+.achilles-wrapper,
+#nav-btn {
   display: flex;
-  gap: 32px;
-  font-size: 14px;
+  justify-content: center;
+  background-color: var(--gloss-grey);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  height: 48px;
+  border-radius: var(--corner-radius);
+  transition: background-color 300ms ease;
 }
 
-/* Hamburger / Modal */
-#hamburger-btn,
+/* Nav Button */
+#nav-btn,
 #close-btn {
-  background-color: transparent;
   border: none;
-}
-
-#hamburger-btn {
-  color: var(--white);
-  opacity: 0;
+  font-size: 14px;
   display: none;
-}
-
-#close-btn {
+  padding: 8px;
   color: var(--black);
 }
 
-#hamburger-btn:hover,
-#close-btn {
+#nav-btn:hover {
   cursor: pointer;
+  background-color: var(--gold-color);
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  background-color: var(--accent-color);
-  z-index: 101;
+.nav-link {
+  padding: 16px;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  padding: 24px;
+.achilles-wrapper:hover {
+  background-color: var(--gold-color);
+}
+
+/* nav modal */
+.nav-modal {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  height: 0px;
+  background-color: var(--white);
+  z-index: 102;
+  border-radius: var(--corner-radius);
+  background-color: var(--artist-card-background);
+  backdrop-filter: blur(9px);
+  border: 1px solid var(--grey-accent);
   opacity: 0;
   visibility: hidden;
 
-  transition: opacity 300ms ease, height 300ms ease, visibility 0s ease 300ms;
+  transition: opacity 1s ease, height 1s ease, visibility 300ms ease 0ms;
 }
 
 .modal-list {
-  margin-top: 80px;
+  position: absolute;
+  top: 100px;
+  right: -100px;
+  text-align: end;
+  opacity: 0;
+
   display: flex;
   flex-direction: column;
   gap: 24px;
-  color: var(--black);
-  font-size: 14px;
+
+  transition: right 1s ease, opacity 300ms ease;
 }
 
-.modal.display-modal {
-  height: 250px;
+.nav-modal.display-modal {
+  height: 240px;
   opacity: 1;
   visibility: visible;
-  transition: opacity 300ms ease, height 300ms ease, visibility 0s ease 0ms;
+  transition: opacity 1s ease, height 1s ease, visibility 0s ease 0ms;
 }
 
-#name {
-  position: absolute;
-  left: 24px;
-  top: 24px;
-  color: var(--black);
+.nav-modal.display-modal .modal-list {
+  right: 16px;
+  opacity: 1;
 }
 
-/* HOME (HERO) */
+
+/* Home */
 #home {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: var(--background-black);
-  overflow: hidden;
+  height: fit-content;
+  background-color: var(--white);
 }
 
+/* Home Gallery */
+.track-container {
+  position: relative;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100vh;
+  overflow: clip;
+}
 
-/* Hero Gallery Carousel*/
 .gallery-track {
+  z-index: 5;
+  position: relative;
   margin-top: 120px;
   display: flex;
-  gap: 16px;
+  gap: 24px;
   width: max-content;
-  animation: scroll 32s linear infinite;
+  animation: scroll 24s linear infinite;
 }
 
 .gallery-item {
+  position: relative;
   flex: 0 0 auto;
   text-align: left;
 }
@@ -204,10 +194,6 @@ nav {
   transition: transform 300ms ease;
 }
 
-.gallery-item img:hover {
-  transform: scale(1.02);
-}
-
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -217,55 +203,156 @@ nav {
   }
 }
 
-.hero-text-container {
-  bottom: 8px;
+.by-artist {
   position: absolute;
-  padding: 0 8px;
+  bottom: 8px;
+  left: 8px;
+  font-size: 12px;
+  background-color: var(--gold-color);
+  padding: 8px;
+  border-radius: var(--corner-radius);
+  transition: background-color 300ms ease;
+  animation: show-artists 4s ease forwards;
+}
+
+.gallery-item img:hover,
+.gallery-item a:hover img,
+.gallery-item a:hover .by-artist {
+  transform: scale(1.02);
+  background-color: var(--white);
+}
+
+.hands-container {
+  position: sticky;
+  top: 24px;
+  bottom: 24px;
   width: 100%;
+  display: flex;
+  z-index: 1;
+}
+
+.god-hand,
+.adam-hand {
+  width: 50%;
+  will-change: transform;
+}
+
+.adam-hand {
+  animation: adam-float 5s ease-in-out infinite;
+}
+
+.god-hand {
+  animation: god-float 5s ease-in-out infinite;
+}
+
+.hands-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #ffffffea;
+  z-index: 4;
+}
+
+.hero-text-container {
+  z-index: 8;
+  position: absolute;
+  width: 100%;
+  padding: 24px;
+  bottom: 16px;
 
   display: flex;
   justify-content: space-between;
-  gap: 16px;
-}
-
-#title {
-  color: var(--white);
-  font-size: 64px;
-  width: 600px;
-}
-
-.hero-CTA-wrapper {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.hero-text,
-.hero-text-2 {
-  color: var(--white);
+  align-items: flex-end;
 }
 
 .hero-text {
-  width: 350px;
+  font-size: 48px;
+  width: 600px;
 }
 
-.hero-text-2 {
-  width: 200px;
-}
-
-.CTA-box {
+.CTA-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 16px;
 }
 
-.hero-CTA-line {
-  width: 1px;
-  height: 100px;
-  background-color: var(--white);
-  margin-right: 24px;
+.cta-text {
+  width: 400px;
 }
+
+.home-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.CTA-btn {
+  padding: 8px;
+  width: fit-content;
+  border-radius: var(--corner-radius);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.CTA-btn:hover {
+  backdrop-filter: blur(2px);
+  background-color: #ffffff00;
+}
+
+.main-CTA {
+  background-color: var(--gold-color);
+}
+
+.main-CTA:hover .btn-circle {
+  background-color: var(--gold-color);
+}
+
+.btn-circle {
+  width: 6px;
+  height: 6px;
+  background-color: var(--white);
+  border-radius: 25px;
+  transition: background-color 300ms ease;
+}
+
+.secondary-CTA {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.secondary-CTA:hover {
+  background-color: #ffffff00;
+  color: var(--black);
+}
+
+.secondary-CTA,
+.main-CTA {
+  transition: color 300ms ease, background-color 300ms ease;
+}
+
+.secondary-CTA:hover .btn-circle {
+  background-color: var(--black);
+}
+
+
+/* Animations */
+@keyframes show-artists {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes adam-float {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-8px);}
+}
+
+@keyframes god-float {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+}
+
 
 
 /* Featured Artists */
@@ -273,6 +360,25 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sub-heading {
+  margin-top: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+#featured-artists {
+  position: relative;
+  z-index: 4;
+}
+
+#featured-artists .heading {
+  text-align: center;
+}
+
+.heading {
+  font-size: 48px;
 }
 
 .featured-artists-wrapper {
@@ -306,19 +412,6 @@ nav {
 .location {
   color: var(--grey-accent);
   font-weight: 300;
-}
-
-.special-box {
-  background-color: var(--background-black);
-  color: var(--white);
-}
-
-.special-box .location {
-  color: var(--grey-accent);
-}
-
-.special-box .artist-bottom-section {
-  border-top: 1px solid var(--artist-card-background);
 }
 
 .artist-img-wrapper {
@@ -383,14 +476,22 @@ nav {
 }
 
 
-/* PLATFORM */
+/* The Platform */
+.platform-container {
+  padding: 2rem 0;
+}
+
 #the-platform {
-  background-color: var(--background-black);
+  position: relative;
+  z-index: 5;
+  border: 1px solid var(--grey-accent);
+  margin: 0 8px;
+  border-radius: var(--corner-radius);
+  background-color: var(--artist-card-background);
 }
 
 .platform-heading {
-  width: 600px;
-  color: var(--white);
+  width: 500px;
 }
 
 .platform-card-container {
@@ -402,7 +503,7 @@ nav {
 
 .card-box {
   position: relative;
-  background-color: var(--accent-color);
+  background-color: #ffd900d2;
   padding: 16px;
   border-radius: 8px;
 
@@ -425,47 +526,18 @@ nav {
   font-size: 120px;
   bottom: 0;
   right: 24px;
-  filter: blur(10px);
-  transition: filter 300ms ease;
-}
-
-.card-box:hover .card-number {
-  cursor: default;
-  filter: blur(0px);
 }
 
 .why-platform {
-  color: var(--white);
-  width: 300px;
+  width: 500px;
 }
 
-.curation-text-wrapper {
-  display: flex;
-  gap: 32px;
-  margin: 48px 0 48px 0;
+/* Built for */
+#built-for {
+  position: relative;
+  z-index: 5;
+  background-color: var(--artist-card-background);
 }
-
-.curation-text {
-  width: 550px;
-}
-
-.curation-img-wrapper {
-  width: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.curation-img-wrapper img {
-  width: 100%;
-  transition: scale 300ms ease;
-}
-
-.curation-img-wrapper:hover img {
-  scale: 1.02;
-}
-
-
-/* Built For */
 
 .built-row {
   display: flex;
@@ -503,10 +575,6 @@ nav {
   font-weight: 300;
 }
 
-.built-for-btn {
-  width: 160px;
-}
-
 .built-for-btn-2 {
   width: 216px;
 }
@@ -534,22 +602,31 @@ nav {
 .artists-line {
   width: 100%;
   height: 1px;
-  background-color: var(--background-black);
+  background-color: var(--grey-accent);
 }
 
 .join-team-text {
   margin-bottom: 32px;
 }
 
+
+
 /* footer */
 footer {
-  border-top: 1px dotted var(--background-black);
-  margin: 0 24px;
+  position: relative;
+  background-color: var(--white);
+  border-top: 1px solid var(--gloss-grey);
 }
 
 .footer-list {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-list,
+.copyright-wrapper {
+  position: relative;
+  z-index: 5;
 }
 
 .footer-company-name {
@@ -576,13 +653,6 @@ footer {
 
 /* 1370px viewport */
 @media (max-width: 1220px){
-  .hero-text-container {
-  bottom: 24px;
-  flex-direction: column;
-  left: 8px;
-  gap: 24px;
-  }
-
   .card-img-wrapper {
     width: 120px;
     height: 140px;
@@ -591,10 +661,6 @@ footer {
   .card-number {
     font-size: 60px;
     bottom: 50px;
-  }
-
-  .heading {
-    font-size: 24px;
   }
 
   .built-for-row h2 {
@@ -612,11 +678,6 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #hamburger-btn {
-    display: block;
-    opacity: 1;
-  }
-
   .nav-list {
     display: none;
   }
@@ -626,15 +687,35 @@ footer {
     font-size: 120px;
     bottom: 32px;
   }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .hero-text-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    bottom: 24px;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  #nav-btn {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
 }
+
 
 @media (max-width: 650px) {
   .gallery-track {
     margin-top: 80px;
-  }
-
-  .gallery-item img {
-    height: 280px;
   }
 
   #title {
@@ -705,6 +786,11 @@ footer {
   #built-for .container {
     padding-top: 1rem;
   }
+
+  .hands-container {
+    bottom: 150px;
+    top: 150px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -735,5 +821,31 @@ footer {
   .copyright-wrapper p,
   .policy-pages a {
     font-size: 8px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .cta-text {
+    width: 100%;
+  }
+
+  .why-platform {
+    width: 80%;
+  }
+
+  .hero-text-container {
+    padding: 8px;
+    bottom: 40px;
+  }
+
+  .gallery-track {
+    margin-top: 150px;
+  }
+
+  .gallery-item img {
+    height: 280px;
   }
 }

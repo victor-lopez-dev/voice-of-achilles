@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+   font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --artist-color: #000;
+  --gold-color: #FFD900;
+  --black: #000;
+  --white: #fff;
+  --background-color: #fff;
+  --secondary-text: #5B5B5B;
+  --corner-radius: 4px;
+  --process-background: #E7E7E7;
+  --gloss-grey: rgba(225, 225, 225, 0.75);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* GEN */
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 4rem 0;
+  margin-top: 8px;
+}
+
+.row {
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.CTA-btn {
+  padding: 8px;
+  width: fit-content;
+  border-radius: var(--corner-radius);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--black);
+}
+
+.CTA-btn:hover {
+  backdrop-filter: blur(2px);
+  background-color: #ffffff00;
+  color: #000;
+}
+
+.main-CTA {
+  background-color: var(--artist-color);
+  color: var(--white);
+}
+
+.main-CTA:hover .btn-circle {
+  background-color: var(--black);
+}
+
+.btn-circle,
+.secondary-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 25px;
+  transition: background-color 300ms ease;
+}
+
+.btn-circle {
+  background-color: var(--white);
+}
+
+.secondary-CTA,
+.main-CTA {
+  transition: color 300ms ease, background-color 300ms ease;
+}
+
+.secondary-CTA:hover .secondary-circle {
+  background-color: var(--white);
+}
+
+/* PROMO */
+.promo {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background-color: var(--gold-color);
+  border-radius: var(--corner-radius);
+  padding: 8px 4px;
+  z-index: 100;
+  text-align: center;
+}
+
+/* navigation */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.achilles-wrapper {
+  width: 48px;
+}
+
+.achilles-icon {
+  width: 32px;
+}
+
+.nav-list {
+  gap: 16px; 
+  padding: 0 24px;
+}
+
+.nav-list,
+.achilles-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gloss-grey);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  height: 48px;
+  border-radius: var(--corner-radius);
+  transition: background-color 300ms ease;
+}
+
+.achilles-wrapper:hover {
+  background-color: var(--gold-color);
+}
+
+/* Artist hero */
+.section-sticky {
+  position: relative;
+  padding: 24px;
+  height: fit-content; /*Height for parent text container*/
+}
+
+#artist {
+  position: sticky;
+  top: 100px;
+  z-index: 1;
+  height: 100vh;
+}
+
+.artist-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.display-wrapper {
+  width: 400px;
+  height: 500px;
+  border-radius: var(--corner-radius);
+  overflow: hidden;
+}
+
+.artist-display {
+  width: 100%;
+}
+
+.artist-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.artist-summary {
+  margin: 8px 0 16px 0;
+  width: 400px;
+}
+
+.artist-name {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.location {
+  color: var(--secondary-text);
+  font-size: 12px;
+}
+
+/* About Artist */
+#about-artist {
+  position: relative;
+  z-index: 10;
+  background-color: var(--white);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.about-text {
+  width: 600px;
+  line-height: 24px;
+}
+
+/* Gallery */
+#gallery {
+  background-color: var(--white);
+}
+
+.gallery-row {
+  height: fit-content;
+  position: relative;
+  padding: 0;
+}
+
+.gallery-text-container {
+  position: sticky;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.portfolio {
+  font-size: 120px;
+}
+
+.gallery-text {
+  width: 100%;
+  max-width: 800px;
+}
+
+.tattoo-container {
+  padding: 32px 0;
+  position: relative;
+  z-index: 10;
+  margin-top: 80px;
+  background-color: #ffffffb1;
+  backdrop-filter: blur(4px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.tattoo-wrapper {
+  width: 400px;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: var(--corner-radius);
+}
+
+.tattoo-img {
+  width: 100%;
+}
+
+.gallery-CTA {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.gallery-CTA p {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Reviews */
+.review-wrapper {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.quote-box {
+  border: .5px solid var(--background-black);
+  border-radius: var(--corner-radius);
+}
+
+.quote {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+
+/* Process */
+#process {
+  background-color: var(--process-background);
+}
+
+.process-wrapper {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.process-card {
+  background-color: var(--white);
+  border-radius: 4px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.process-icon {
+  width: 40px;
+}
+
+.process-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.process-info {
+  color: var(--secondary-text);
+}
+
+/* Final CTA */
+.CTA-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.CTA-row a {
+  width: 100%;
+}
+
+.CTA-text {
+  font-size: 80px;
+}
+
+.CTA-info {
+  margin-bottom: 16px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  background-color: var(--white);
+  border-top: 1px solid var(--gloss-grey);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list,
+.copyright-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+.footer-company-name {
+  width: 100%;
+  margin: 80px 0 80px 0;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.policy-pages {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer-container {
+  padding: 4rem 0 4rem 0;
+}
+
+
+/* Viewport 1000px */
+@media (max-width: 1000px) {
+  .section-sticky, nav {
+    padding: 8px;
+  }
+
+  nav {
+    gap: 8px;
+    top: 8px;
+  }
+
+  .review-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .process-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 748px) {
+  .artist-container {
+    flex-direction: column;
+  }
+
+  .display-wrapper {
+    width: 300px;
+    height: 400px;
+  }
+
+  .artist-info-container {
+    height: fit-content;
+  }
+
+  .artist-summary-container {
+    margin-top: 16px;
+  }
+
+  .artist-summary {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .portfolio {
+    font-size: 80px;
+  }
+
+  .gallery-text {
+    max-width: 500px;
+  }
+
+  p, a {
+    font-size: 12px;
+  }
+
+  .CTA-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  #artist {
+    top: 65px;
+  }
+
+  .portfolio {
+    font-size: 32px;
+    max-width: 300px;
+  }
+
+  .tattoo-wrapper {
+    width: 75%;
+  }
+
+  .process-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copyright-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .achilles-icon {
+    width: 24px;
+  }
+
+  .achilles-wrapper {
+    height: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .display-wrapper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .artist-container {
+    gap: 8px;
+  }
+}
+
+

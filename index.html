@@ -10,472 +10,668 @@
 <body>
   <header>
     <nav>
-      <div class="nav-container">
-        <span>Voice of Achilles</span>
-        
-        <ul class="nav-list">
-          <li class="nav-link"><a href="/">Home</a></li>
+      <a href="#home">
+        <figure class="achilles-wrapper">
+          <img src="assets/achilles-helmet.svg" class="achilles-icon" alt="achilles helmet icon">
+        </figure>
+      </a>
 
-          <li class="nav-link"><a href="#featured-artists">Featured Artists</a></li>
+      <ul class="nav-list">
+        <li><a href="#featured-artists" class="nav-link">Featured Artists</a></li>
+        <li><a href="#artist-program" class="nav-link">Join the Team</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
 
-          <li class="nav-link text-highlight"><a href="#artist-program">Get Featured</a></li>
-        </ul>
-
-        <button id="hamburger-btn">
-          Menu
-        </button>
-      </div>
+      <button id="nav-btn">Menu</button>
     </nav>
 
-    <div class="modal">
-      <div class="modal-top">
-        <p id="name">Voice of Achilles</p>
-        <button id="close-btn">
-          Close
-        </button>
-      </div>
-
+    <div class="nav-modal">
       <ul class="modal-list">
-        <li>
-          <a href="#home" class="modal-link">Home</a>
-        </li>
-
-        <li>
-          <a href="#featured-artists" class="modal-link">Featured Artists</a>
-        </li>
-
-        <li>
-          <a href="#artist-program" class="modal-link">Join The Roster</a>
-        </li>
+        <li><a href="#featured-artists" class="modal-link">Featured Artists</a></li>
+        <li><a href="#artist-program" class="modal-link">Join the Team</a></li>
+        <li><a href="#" class="modal-link">Contact</a></li>
       </ul>
     </div>
   </header>
 
-
   <main>
     <section id="home">
-      <div class="gallery-track">
-        <div class="gallery-item">
-          <img src="tattoos/jdiaz-dragon.webp" alt="dragon full color tattoo by Jdiaz">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/randy-car.webp" alt="car tattoo by Randy">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jeju-flowers.webp" alt="flowers tattoo by Jeju">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jdiaz-rocklee.webp" alt="rock lee from Naruto tattoo by Jdiaz">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jeju-peach.webp" alt="peach colored tattoo by Jeju">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jdiaz-full-leg.webp" alt="full leg colored tattoo by Jdiaz">
-        </div>  
-        
-        <div class="gallery-item">
-          <img src="tattoos/randy-whale.webp" alt="Whale and wave tattoo by Randy ">
-        </div>  
-            
-        <!-- DUPLICATE -->
-        <div class="gallery-item">
-          <img src="tattoos/jdiaz-dragon.webp" alt="dragon full color tattoo by Jdiaz">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/randy-car.webp" alt="car tattoo by Randy">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jeju-flowers.webp" alt="flowers tattoo by Jeju">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jdiaz-rocklee.webp" alt="rock lee from Naruto tattoo by Jdiaz">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jeju-peach.webp" alt="peach colored tattoo by Jeju">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="tattoos/jdiaz-full-leg.webp" alt="full leg colored tattoo by Jdiaz">
-        </div>  
-        
-        <div class="gallery-item">
-          <img src="tattoos/randy-whale.webp" alt="Whale and wave tattoo by Randy ">
-        </div>        
-      </div>
+      <div class="hands-overlay"></div>
 
-      <div class="hero-text-container">
-        <h1 id="title">Curated Artists. Intentional Work.</h1>
-
-        <div class="hero-CTA-wrapper">
-          <div class="CTA-box">
-            <p class="hero-text">
-              Explore a curated group of tattoo artists, each known for their style, craft, and consistency.
-            </p>
-
-            <a href="#" class="CTA-button CTA-button-accent">Find your artist</a>
+      <div class="track-container">
+        
+        <div class="gallery-track">
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/jdiaz-dragon.webp" alt="dragon full color tattoo by Jdiaz">
+              
+              <p class="by-artist">Jdiaz</p>
+            </a>
           </div>
-
-          <div class="hero-CTA-line"></div>
-
-          <div class="CTA-box">
-            <p class="hero-text-2">
-              Artists, interested in being a part of the roster?
-            </p>
-
-            <a href="#" class="CTA-button CTA-button-secondary">Request Consideration</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured-artists">
-      <div class="container">
-        <div class="row featured-artists-row">
-          <h2 class="heading centered-text"><span class="dark-highlight">Featured</span> Artists.</h2>
-
-          <p class="sub-heading centered-text">Each artist featured has been carefully chosen for their style, experience, and commitment to quality.</p>
-
-          <div class="featured-artists-wrapper">
-            <div class="artist-box special-box">
-              <div class="artist-left-section">
-
-                <div class="artist-image-name">
-                  <figure class="artist-img-wrapper">
-                    <img src="artists/jeju-artist-img.webp" alt="photo of Jeju, tattoo artist">
-                  </figure>
-                  
-                  <div class="name-container">
-                    <p class="artist-name">JEJU</p>
-                    <p class="location">Rockville, MD</p>
-                  </div>
-                </div>
-
-                <p class="artist-bio">Black & grey and color realism tattoos designed with precision.</p>
-              </div>
-
-              <div class="artist-bottom-section"> 
-                <p class="style-tag">[black / grey realism] [color realism]</p>
-
-                <a href="jeju.html" class="CTA-button CTA-button-accent">View Artist</a>
-              </div>
-
-              <div class="card-showcase-container">
-                <figure class="card-img-wrapper">
-                  <img src="tattoos/jeju-peach.webp" alt="peach colored tattoo by Jeju">
-                </figure>
-
-                <figure class="card-img-wrapper">
-                  <img src="tattoos/jeju-flowers.webp" alt="flowers tattoo by Jeju">
-                </figure>
-              </div>
-            </div>
-
-            <div class="artist-box">
-              <div class="artist-left-section">
-
-                <div class="artist-image-name">
-                  <figure class="artist-img-wrapper">
-                    <img src="artists/jdiaz-artist-img.webp" alt="photo of Jdiaz, tattoo artist">
-                  </figure>
-                  
-                  <div class="name-container">
-                    <p class="artist-name">JDAIZ</p>
-                    <p class="location">Rockville, MD</p>
-                  </div>
-                </div>
-
-                <p class="artist-bio">Black & grey and color realism tattoos for full body projects.</p>
-              </div>
-
-              <div class="artist-bottom-section"> 
-                <p class="style-tag">[black / grey realism] [color realism]</p>
-
-                <a href="jdiaz.html" class="CTA-button CTA-button-accent">View Artist</a>
-              </div>
-
-               <div class="card-showcase-container">
-                <figure class="card-img-wrapper">
-                  <img src="tattoos/jdiaz-dragon.webp" alt="dragon full color tattoo by Jdiaz">
-                </figure>
-                
-                <figure class="card-img-wrapper">
-                  <img src="tattoos/jdiaz-full-leg.webp" alt="full leg colored tattoo by Jdiaz">
-                </figure>
-              </div>
-            </div>
-
-            <div class="artist-box">
-              <div class="artist-left-section">
-
-                <div class="artist-image-name">
-                  <figure class="artist-img-wrapper">
-                    <img src="artists/randy-artist-img.webp" alt="photo of Randy, tattoo artist">
-                  </figure>
-                  
-                  <div class="name-container">
-                    <p class="artist-name">RANDY</p>
-                    <p class="location">Rockville, MD</p>
-                  </div>
-                </div>
-
-                <p class="artist-bio">Traditional / fine line made for long-lasting results.</p>
-              </div>
-
-              <div class="artist-bottom-section"> 
-                <p class="style-tag">[black / grey realism] [color realism]</p>
-
-                <a href="randy.html" class="CTA-button CTA-button-accent">View Artist</a>
-              </div>
-
-               <div class="card-showcase-container">
-                <figure class="card-img-wrapper">
-                  <img src="tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy">
-                </figure>
-                
-                <figure class="card-img-wrapper">
-                  <img src="tattoos/randy-whale.webp" alt="Whale and wave tattoo by Randy.">
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="the-platform">
-      <div class="container">
-        <div class="row">
-          <h2 class="heading platform-heading">A more intentional way to find your artist.</h2>
-
-          <div class="platform-card-container">
-            <div class="card-box">
-              <h3 class="card-title">Explore the roster</h3>
-
-              <p class="card-info">
-                Browse a curated group of artists with distinct styles and specialties.
-              </p>
-
-              <p class="card-number">01</p>
-            </div>
-
-            <div class="card-box">
-              <h3 class="card-title">Find the right fit</h3>
-
-              <p class="card-info">
-                Compare artistic direction, strengths, and visual identity.
-              </p>
-
-              <p class="card-number">02</p>
-            </div>
-
-            <div class="card-box">
-              <h3 class="card-title">Move forward with confidence</h3>
-
-              <p class="card-info">
-                Submit your project and connect with the right artist.
-              </p>
-
-              <p class="card-number">03</p>
-            </div>
-          </div>
-
-          <p class="why-platform">This platform is designed to match clients with artists whose style and approach align from the beginning.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-curation-matters">
-      <div class="container">
-        <div class="row">
-          <h2 class="heading">Why Curation Matters.</h2>
           
-          <div class="curation-text-wrapper">
-            <p class="curation-text">Finding a tattoo artist should be about more than availability. It should be about alignment, trust, and confidence in the outcome.</p>
-
-            <p class="curation-text">The goal is to create a better starting point for clients and a stronger context for the artists represented.</p>
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/jeju-demon-slayer.webp" alt="Demon slayer tattoo by Jeju">
+              
+              <p class="by-artist">Jeju</p>
+            </a>
           </div>
-
-          <figure class="curation-img-wrapper">
-            <img src="tattoos/adam-god-color.webp" alt="image of two hands reaching out.">
-          </figure>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy">
+              
+              <p class="by-artist">Randy</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/maginkz-tiger-eyes.webp" alt="tiger face tattoo by magic inkz">
+              
+              <p class="by-artist">Magicinkz</p>
+              
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/sarai-blk-red-flower.webp" alt="flower tattoo by Sarai">
+              
+              <p class="by-artist">Sarai</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/david-lay-sleeve.webp" alt="sleeve by David Lay">
+              
+              <p class="by-artist">David Lay</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/daniela-zoro.webp" alt="zoro from One Piece by Daniela">
+              
+              <p class="by-artist">Daniela</p>
+            </a>
+          </div>  
+          
+          <!-- DUPLICATE -->
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/jdiaz-dragon.webp" alt="dragon full color tattoo by Jdiaz">
+              
+              <p class="by-artist">Jdiaz</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/jeju-demon-slayer.webp" alt="Demon slayer tattoo by Jeju">
+              
+              <p class="by-artist">Jeju</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy">
+              
+              <p class="by-artist">Randy</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/maginkz-tiger-eyes.webp" alt="tiger face tattoo by magic inkz">
+              
+              <p class="by-artist">Magicinkz</p>
+              
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/sarai-blk-red-flower.webp" alt="flower tattoo by Sarai">
+              
+              <p class="by-artist">Sarai</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/david-lay-sleeve.webp" alt="sleeve by David Lay">
+              
+              <p class="by-artist">David Lay</p>
+            </a>
+          </div>
+          
+          <div class="gallery-item">
+            <a href="#">
+              <img src="home-tattoos/daniela-zoro.webp" alt="zoro from One Piece by Daniela">
+              
+              <p class="by-artist">Daniela</p>
+            </a>
+          </div>        
         </div>
-      </div>
-    </section>
 
-    <!-- Built for clients -->
+        <div class="hero-text-container">
+          <h1 class="hero-text">FIND ARTISTS BUILT FOR YOUR STYLE.</h1>
 
-    <section id="built-for">
-      <div class="container">
-        <div class="row built-row">
-          <div class="built-for-row">
-            <h2 class="heading">Built For <span class="dark-highlight">Clients.</span></h2>
-            
-            <div class="client-point-wrapper">
-              <div class="client-point-box">
-                <p class="point-title">Curated artists, not endless listings</p>
-                
-                <p class="point-info">
-                  Instead of scrolling through hundreds of profiles with no clear direction, you’re presented with a refined selection of artists whose work has already been evaluated for quality, consistency, and creative identity. Every profile you see is there for a reason.
-                </p>
-              </div>
+          <div class="CTA-container">
+            <p class="cta-text">Explore a curated group of tattoo artists, each known for their style, craft, and consistency.</p>
+
+            <div class="home-btn-container">
+              <a href="#" class="main-CTA CTA-btn">
+                <div class="btn-circle"></div>
+                Featured Artists
+              </a>
               
-              <div class="client-point-box">
-                <p class="point-title">Better alignment from the start</p>
-                
-                <p class="point-info">
-                  Each artist is selected not just for skill, but for a clear and recognizable style. This makes it easier to find someone whose approach naturally fits your idea—reducing guesswork and avoiding mismatched expectations.
-                </p>
-              </div>
-              
-              <div class="client-point-box">
-                <p class="point-title">Quality-first experience</p>
-                
-                <p class="point-info">
-                  From the first interaction to the final piece, the focus is on delivering a high-level result. The platform prioritizes artists who care about execution, detail, and the overall experience—not just volume.
-                </p>
-              </div>
-              
-              <div class="client-point-box">
-                <p class="point-title">Clearer path to booking</p>
-                
-                <p class="point-info">
-                  Rather than reaching out blindly, the process is designed to help you move forward with intention. You understand the artist’s strengths, their type of work, and how they approach projects before you even inquire.
-                </p>
-              </div>
-
-              <a href="#" class="CTA-button CTA-button-accent built-for-btn">Find your artist</a>
-            </div>
-          </div>
-
-          <div id="artist-program"></div>
-
-          <!-- Built for Artists -->
-
-          <div class="built-for-row">
-            <h2 class="heading built-for-heading">For Artists.</h2>
-
-            <div class="artist-container"> 
-              <div class="artist-points-container">
-                <h3>What <span class="dark-highlight">Selected Artists</span> Receive.</h3>
-                <div class="client-point-wrapper">
-                  <div class="client-point-box">
-                    <p class="point-title">A dedicated artist profile</p>
-                    
-                    <p class="point-info">
-                      A personalized page designed to present your work, style, and approach in a way that feels cohesive and intentional.
-                    </p>
-                  </div>
-                  
-                  <div class="client-point-box">
-                    <p class="point-title">Positioning within a curated roster</p>
-                    
-                    <p class="point-info">
-                      Your work is shown alongside other high-level artists, creating a stronger context and elevating how it is perceived.
-                    </p>
-                  </div>
-                  
-                  <div class="client-point-box">
-                    <p class="point-title">Aligned client inquiries</p>
-                    
-                    <p class="point-info">
-                      Clients come through with a clearer understanding of your style and direction, leading to better-fit projects.
-                    </p>
-                  </div>
-                  
-                  <div class="client-point-box">
-                    <p class="point-title">A more intentional presentation of your work</p>
-                    
-                    <p class="point-info">
-                      Less noise, more focus. Your work is not buried. It is given space to be understood.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="artists-line"></div>
-
-              <!-- Second part of artists section -->
-
-              <div class="artist-points-container">
-                <h3>The <span class="dark-highlight">Standard.</span></h3>
-                <div class="client-point-wrapper">
-                  <div class="client-point-box">
-                    <p class="point-title">A clear point of view</p>
-                    
-                    <p class="point-info">
-                      Work that feels recognizable, not interchangeable. A style that is developed, not borrowed.
-                    </p>
-                  </div>
-                  
-                  <div class="client-point-box">
-                    <p class="point-title">Professional approach</p>
-                    
-                    <p class="point-info">
-                      Clear communication, respect for the process, and an understanding of the client experience.
-                    </p>
-                  </div>
-                  
-                  <div class="client-point-box">
-                    <p class="point-title">Strong, consistent execution</p>
-                    
-                    <p class="point-info">
-                      Clean application, attention to detail, and a level of work that holds up across projects.
-                    </p>
-                  </div>
-                  
-                  <div class="client-point-box">
-                    <p class="point-title">Long-term mindset</p>
-                    
-                    <p class="point-info">
-                      Artists focused on building a body of work—not just completing sessions.
-                    </p>
-                  </div>
-
-                  <div class="client-point-box">
-                    <p class="join-team-text">Send us your Instagram profile (portfolio), years of experience, and location.</p>
-
-                    <a href="mailto:contact@voiceofachilles.com" class="CTA-button CTA-button-accent built-for-btn-2">Join our Team</a>
-                  </div>
-                </div>
-              </div>
+              <a href="#" class="secondary-CTA CTA-btn">
+                <div class="btn-circle"></div>
+                Join the Team
+              </a>
             </div>
           </div>
         </div>
       </div>
+
+      <section id="featured-artists">
+        <div class="container">
+          <div class="row featured-artists-row">
+            <h2 class="heading">Featured Artists</h2>
+            <p class="sub-heading">
+              Each artist featured has been carefully chosen for their style, experience, and commitment to quality.
+            </p>
+
+            <div class="featured-artists-wrapper">
+              <!-- Artist (JEJU) -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/jeju-artist-img.webp" alt="photo of Jeju, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">Jeju</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Black & grey and color realism tattoos designed with precision.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="jeju.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="jeju-tattoos/jeju-peach.webp" alt="peach colored tattoo by Jeju">
+                  </figure>
+
+                  <figure class="card-img-wrapper">
+                    <img src="jeju-tattoos/jeju-lion-witch.webp" alt="flowers tattoo by Jeju">
+                  </figure>
+                </div>
+              </div>
+
+              <!-- Artist JEJU -->
+
+              <!-- Artist Jdiaz -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/jdiaz-artist-img.webp" alt="photo of Jdiaz, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">Jdiaz</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Black & grey and color realism tattoos for full body projects.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="jeju.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="jdiaz-tattoos/jdiaz-dragon.webp" alt="dragon full color tattoo by Jdiaz">
+                  </figure>
+                  
+                  <figure class="card-img-wrapper">
+                    <img src="jdiaz-tattoos/jdiaz-full-leg.webp" alt="full leg colored tattoo by Jdiaz">
+                  </figure>
+                </div>
+              </div>
+              <!-- Artist Jdiaz -->
+
+              <!-- Artist Randy -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/randy-artist-img.webp" alt="photo of Randy, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">Randy</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Traditional / fine line made for long-lasting results.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="artist-test.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="randy-tattoos/randy-koy-fish.webp" alt="koy fish tattoo by Randy">
+                  </figure>
+                  
+                  <figure class="card-img-wrapper">
+                    <img src="randy-tattoos/randy-whale.webp" alt="Whale and wave tattoo by Randy.">
+                  </figure>
+                </div>
+              </div>
+              <!-- Artist Randy -->
+
+              <!-- Artist Magicinkz -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/magicinkz-artist-img.webp" alt="photo of Randy, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">Magicinkz</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Traditional / fine line made for long-lasting results.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="jeju.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="magicinkz-tattoos/maginkz-tiger-eyes.webp" alt="Tiger eye tattoo by Magic inkz">
+                  </figure>
+                  
+                  <figure class="card-img-wrapper">
+                    <img src="magicinkz-tattoos/maginkz-jesus.webp" alt="Jesus tattoo by Magic Inkz">
+                  </figure>
+                </div>
+              </div>
+              <!-- Artist Magicinkz -->
+
+              <!-- Artist Sarai -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/Sarai-artist-img.webp" alt="photo of Sarai, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">Sarai</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Traditional / fine line made for long-lasting results.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="jeju.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="sarai-tattoos/sarai-blk-red-flower.webp" alt="Tiger eye tattoo by Magic inkz">
+                  </figure>
+                  
+                  <figure class="card-img-wrapper">
+                    <img src="sarai-tattoos/sarai-soldier.webp" alt="Jesus tattoo by Magic Inkz">
+                  </figure>
+                </div>
+              </div>
+              <!-- Artist Sarai -->
+
+              <!-- Artist David Lay -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/David-Lay-Artist.webp" alt="photo of Sarai, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">David Lay</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Traditional / fine line made for long-lasting results.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="jeju.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="david-lay-tattoos/david-lay-skelelon.webp" alt="Geometric Tattoo by David Lay">
+                  </figure>
+                  
+                  <figure class="card-img-wrapper">
+                    <img src="david-lay-tattoos/david-lay-sleeve.webp" alt="Sleeve by David Lay">
+                  </figure>
+                </div>
+              </div>
+              <!-- Artist David  Lay -->
+              <!-- Artist Daniela -->
+              <div class="artist-box">
+                <div class="artist-left-section">
+
+                  <div class="artist-image-name">
+                    <figure class="artist-img-wrapper">
+                      <img src="artists/Daniela-artist.webp" alt="photo of Sarai, tattoo artist">
+                    </figure>
+                    
+                    <div class="name-container">
+                      <p class="artist-name">Daniela</p>
+                      <p class="location">Rockville, MD</p>
+                    </div>
+                  </div>
+
+                  <p class="artist-bio">Traditional / fine line made for long-lasting results.</p>
+                </div>
+
+                <div class="artist-bottom-section"> 
+                  <p class="style-tag">[black / grey realism] [color realism]</p>
+
+                  <a href="jeju.html" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    View Artist
+                  </a>
+                </div>
+
+                <div class="card-showcase-container">
+                  <figure class="card-img-wrapper">
+                    <img src="daniela-tattoos/daniela-zoro.webp" alt="Zoro Tattoo by Daniela">
+                  </figure>
+                  
+                  <figure class="card-img-wrapper">
+                    <img src="daniela-tattoos/daniela-eye.webp" alt="Eye tattoo by Daniela">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="the-platform">
+        <div class="container platform-container">
+          <div class="row">
+            <h2 class="heading platform-heading">A more intentional way to find your artist.</h2>
+
+            <div class="platform-card-container">
+              <div class="card-box">
+                <h3 class="card-title">Explore the roster</h3>
+
+                <p class="card-info">
+                  Browse a curated group of artists with distinct styles and specialties.
+                </p>
+
+                <p class="card-number">01</p>
+              </div>
+
+              <div class="card-box">
+                <h3 class="card-title">Find the right fit</h3>
+
+                <p class="card-info">
+                  Compare artistic direction, strengths, and visual identity.
+                </p>
+
+                <p class="card-number">02</p>
+              </div>
+
+              <div class="card-box">
+                <h3 class="card-title">Move forward with confidence</h3>
+
+                <p class="card-info">
+                  Submit your project and connect with the right artist.
+                </p>
+
+                <p class="card-number">03</p>
+              </div>
+            </div>
+
+            <p class="why-platform">This platform is designed to match clients with artists whose style and approach align from the beginning.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="hands-container">
+        <img src="assets/Adam-hand.webp" alt="Adam's hand from birth of creation" class="adam-hand">
+        
+        <img src="assets/God-hand.webp" alt="God's hand from birth of creation" class="god-hand">
+      </div>
+
+      <section id="built-for">
+        <div class="container">
+          <div class="row built-row">
+            <div class="built-for-row">
+              <h2 class="heading">Built For <span class="dark-highlight">Clients.</span></h2>
+              
+              <div class="client-point-wrapper">
+                <div class="client-point-box">
+                  <p class="point-title">Curated artists, not endless listings</p>
+                  
+                  <p class="point-info">
+                    Instead of scrolling through hundreds of profiles with no clear direction, you’re presented with a refined selection of artists whose work has already been evaluated for quality, consistency, and creative identity. Every profile you see is there for a reason.
+                  </p>
+                </div>
+                
+                <div class="client-point-box">
+                  <p class="point-title">Better alignment from the start</p>
+                  
+                  <p class="point-info">
+                    Each artist is selected not just for skill, but for a clear and recognizable style. This makes it easier to find someone whose approach naturally fits your idea—reducing guesswork and avoiding mismatched expectations.
+                  </p>
+                </div>
+                
+                <div class="client-point-box">
+                  <p class="point-title">Quality-first experience</p>
+                  
+                  <p class="point-info">
+                    From the first interaction to the final piece, the focus is on delivering a high-level result. The platform prioritizes artists who care about execution, detail, and the overall experience—not just volume.
+                  </p>
+                </div>
+                
+                <div class="client-point-box">
+                  <p class="point-title">Clearer path to booking</p>
+                  
+                  <p class="point-info">
+                    Rather than reaching out blindly, the process is designed to help you move forward with intention. You understand the artist’s strengths, their type of work, and how they approach projects before you even inquire.
+                  </p>
+                </div>
+
+                <a href="#" class="CTA-btn main-CTA">
+                    <div class="btn-circle"></div>
+                    Find your artist
+                </a>
+              </div>
+            </div>
+
+            <div id="artist-program"></div>
+
+            <!-- Built for Artists -->
+
+            <div class="built-for-row">
+              <h2 class="heading built-for-heading">For Artists.</h2>
+
+              <div class="artist-container"> 
+                <div class="artist-points-container">
+                  <h3>What <span class="dark-highlight">Selected Artists</span> Receive.</h3>
+                  <div class="client-point-wrapper">
+                    <div class="client-point-box">
+                      <p class="point-title">A dedicated artist profile</p>
+                      
+                      <p class="point-info">
+                        A personalized page designed to present your work, style, and approach in a way that feels cohesive and intentional.
+                      </p>
+                    </div>
+                    
+                    <div class="client-point-box">
+                      <p class="point-title">Positioning within a curated roster</p>
+                      
+                      <p class="point-info">
+                        Your work is shown alongside other high-level artists, creating a stronger context and elevating how it is perceived.
+                      </p>
+                    </div>
+                    
+                    <div class="client-point-box">
+                      <p class="point-title">Aligned client inquiries</p>
+                      
+                      <p class="point-info">
+                        Clients come through with a clearer understanding of your style and direction, leading to better-fit projects.
+                      </p>
+                    </div>
+                    
+                    <div class="client-point-box">
+                      <p class="point-title">A more intentional presentation of your work</p>
+                      
+                      <p class="point-info">
+                        Less noise, more focus. Your work is not buried. It is given space to be understood.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="artists-line"></div>
+
+                <!-- Second part of artists section -->
+
+                <div class="artist-points-container">
+                  <h3>The <span class="dark-highlight">Standard.</span></h3>
+                  <div class="client-point-wrapper">
+                    <div class="client-point-box">
+                      <p class="point-title">A clear point of view</p>
+                      
+                      <p class="point-info">
+                        Work that feels recognizable, not interchangeable. A style that is developed, not borrowed.
+                      </p>
+                    </div>
+                    
+                    <div class="client-point-box">
+                      <p class="point-title">Professional approach</p>
+                      
+                      <p class="point-info">
+                        Clear communication, respect for the process, and an understanding of the client experience.
+                      </p>
+                    </div>
+                    
+                    <div class="client-point-box">
+                      <p class="point-title">Strong, consistent execution</p>
+                      
+                      <p class="point-info">
+                        Clean application, attention to detail, and a level of work that holds up across projects.
+                      </p>
+                    </div>
+                    
+                    <div class="client-point-box">
+                      <p class="point-title">Long-term mindset</p>
+                      
+                      <p class="point-info">
+                        Artists focused on building a body of work—not just completing sessions.
+                      </p>
+                    </div>
+
+                    <div class="client-point-box">
+                      <p class="join-team-text">Send us your Instagram profile (portfolio), years of experience, and location.</p>
+
+                    <a href="jeju.html" class="CTA-btn main-CTA">
+                      <div class="btn-circle"></div>
+                      Join the team
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <footer>
       <div class="footer-container">
         <div class="row">
           <ul class="footer-list">
-            <li><a href="#" class="footer-link">Back to Top</a></li>
+            <li><a href="#home" class="footer-link">Back to Top</a></li>
 
-            <li><a href="#" class="footer-link">Featured Artists</a></li>
+            <li><a href="#featured-artists" class="footer-link">Featured Artists</a></li>
 
-            <li><a href="#" class="footer-link">For Artists</a></li>
+            <li><a href="#artist-program" class="footer-link">For Artists</a></li>
             
             <li><a href="#" class="footer-link">Contact</a></li>
           </ul>
 
-          <img src="tattoos/voiceofachilles.svg" alt="" class="footer-company-name">
+          <img src="assets/voiceofachilles.svg" alt="" class="footer-company-name">
 
           <div class="copyright-wrapper">
             <p class="copyright">
@@ -490,7 +686,6 @@
         </div>
       </div>
     </footer>
-
   </main>
 
 

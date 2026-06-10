@@ -1,6 +1,6 @@
-let navBtn = document.getElementById("hamburger-btn");
+let navBtn = document.getElementById("nav-btn");
 let navBtnClose = document.getElementById("close-btn");
-let navMenu = document.querySelector(".modal");
+let navMenu = document.querySelector(".nav-modal");
 
 let navLinks = document.querySelectorAll("modal-link");
 let body1 = document.body;
