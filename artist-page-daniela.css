@@ -13,7 +13,7 @@
   --gold-color: #FFD900;
   --black: #000;
   --white: #fff;
-  --background-color: #fff;
+  --background-color: #EDE8D0;
   --secondary-text: #5B5B5B;
   --corner-radius: 4px;
   --process-background: #E7E7E7;
@@ -107,11 +107,12 @@ h2 {
   bottom: 8px;
   left: 8px;
   right: 8px;
-  background-color: var(--gold-color);
+  background-color: var(--black);
   border-radius: var(--corner-radius);
   padding: 8px 4px;
   z-index: 100;
   text-align: center;
+  color: var(--white);
 }
 
 /* navigation */
@@ -214,7 +215,7 @@ nav {
 #about-artist {
   position: relative;
   z-index: 10;
-  background-color: var(--white);
+  background-color: var(--background-color);
 }
 
 .text-container {
@@ -323,7 +324,7 @@ nav {
 
 /* Process */
 #process {
-  background-color: var(--process-background);
+  background-color: var(--white);
 }
 
 .process-wrapper {
@@ -334,7 +335,7 @@ nav {
 }
 
 .process-card {
-  background-color: var(--white);
+  background-color: var(--background-color);
   border-radius: 4px;
   padding: 16px;
 
