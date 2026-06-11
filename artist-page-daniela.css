@@ -13,7 +13,7 @@
   --gold-color: #FFD900;
   --black: #000;
   --white: #fff;
-  --background-color: #EDE8D0;
+  --background-color: #f0efe3;
   --secondary-text: #5B5B5B;
   --corner-radius: 4px;
   --process-background: #E7E7E7;
@@ -232,10 +232,6 @@ nav {
 }
 
 /* Gallery */
-#gallery {
-  background-color: var(--white);
-}
-
 .gallery-row {
   height: fit-content;
   position: relative;
@@ -268,8 +264,6 @@ nav {
   position: relative;
   z-index: 10;
   margin-top: 80px;
-  background-color: #ffffffb1;
-  backdrop-filter: blur(4px);
   
   display: flex;
   flex-direction: column;
@@ -295,6 +289,7 @@ nav {
   align-items: center;
   gap: 16px;
   text-align: center;
+  margin-top: 80px;
 }
 
 .gallery-CTA p {
@@ -323,10 +318,6 @@ nav {
 
 
 /* Process */
-#process {
-  background-color: var(--white);
-}
-
 .process-wrapper {
   margin-top: 80px;
   display: grid;
@@ -335,7 +326,7 @@ nav {
 }
 
 .process-card {
-  background-color: var(--background-color);
+  background-color: var(--white);
   border-radius: 4px;
   padding: 16px;
 
