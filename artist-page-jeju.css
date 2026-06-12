@@ -254,11 +254,6 @@ nav {
   font-size: 120px;
 }
 
-.gallery-text {
-  width: 100%;
-  max-width: 800px;
-}
-
 .tattoo-container {
   padding: 32px 0;
   position: relative;
@@ -461,10 +456,6 @@ footer {
 
   .portfolio {
     font-size: 80px;
-  }
-
-  .gallery-text {
-    max-width: 500px;
   }
 
   p, a {
