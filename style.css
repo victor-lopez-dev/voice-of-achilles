@@ -178,18 +178,21 @@ nav {
   gap: 24px;
   width: max-content;
   animation: scroll 24s linear infinite;
+  border: 1px solid red;
 }
 
 .gallery-item {
   position: relative;
   flex: 0 0 auto;
   text-align: left;
+  border: 1px solid red;
 }
 
 .gallery-item img {
+  width: 280px;
   height: 350px; /* Adjust image size */
+  flex-shrink: 0;
   object-fit: cover;
-  width: auto;
   border-radius: 8px;
   transition: transform 300ms ease;
 }
@@ -218,7 +221,6 @@ nav {
 .gallery-item img:hover,
 .gallery-item a:hover img,
 .gallery-item a:hover .by-artist {
-  transform: scale(1.02);
   background-color: var(--white);
 }
 
@@ -842,7 +844,7 @@ footer {
   }
 
   .gallery-track {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .gallery-item img {
