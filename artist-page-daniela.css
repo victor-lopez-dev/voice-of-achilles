@@ -282,7 +282,6 @@ nav {
   align-items: center;
   gap: 16px;
   text-align: center;
-  margin-top: 80px;
 }
 
 .gallery-CTA p {
@@ -472,7 +471,7 @@ footer {
   }
 
   .tattoo-wrapper {
-    width: 75%;
+    width: 90%;
   }
 
   .process-wrapper {
