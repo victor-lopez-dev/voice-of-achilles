@@ -177,14 +177,12 @@ nav {
   gap: 24px;
   width: max-content;
   animation: scroll 24s linear infinite;
-  border: 1px solid red;
 }
 
 .gallery-item {
   position: relative;
   flex: 0 0 auto;
   text-align: left;
-  border: 1px solid red;
 }
 
 .gallery-item img {
@@ -194,6 +192,12 @@ nav {
   object-fit: cover;
   border-radius: 8px;
   transition: transform 300ms ease;
+  animation: img-change 800ms linear forwards;
+}
+
+@keyframes img-change {
+  from {height: 0;}
+  top {height: 350px;}
 }
 
 @keyframes scroll {
@@ -268,12 +272,26 @@ nav {
 .hero-text {
   font-size: 48px;
   width: 600px;
+  opacity: 0;
+  animation: appear 500ms linear forwards 1s;
+}
+
+@keyframes appear {
+  from {transform: translateX(-100px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
 }
 
 .CTA-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  opacity: 0;
+  animation: appear-top 500ms linear forwards 1.2s;
+}
+
+@keyframes appear-top {
+  from {transform: translateX(100px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
 }
 
 .cta-text {
