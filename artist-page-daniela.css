@@ -431,8 +431,8 @@ footer {
   }
 
   .artist-display {
-    height: stretch;
-    scale: 2.12;
+    height: 100%;
+    transform: scale(2.12);
   }
 
   .artist-info-container {

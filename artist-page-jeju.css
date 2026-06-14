@@ -434,6 +434,11 @@ footer {
     height: 400px;
   }
 
+  .artist-display {
+    height: 100%;
+    transform: scale(2.12);
+  }
+
   .artist-info-container {
     height: fit-content;
   }
