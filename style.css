@@ -652,6 +652,30 @@ footer {
   padding: 4rem 0 8px 0;
 }
 
+/* Legal Pages */
+.effective-date {
+  margin-bottom: 8px;
+}
+
+.legal-text {
+  margin: 8px 0;
+}
+
+.text-container {
+  padding-top: 32px;
+}
+
+.bullet-point li {
+  list-style-type: disc;
+  margin-left: 16px;
+}
+
+.legal-text a {
+  color: #0188ff;
+  text-decoration: underline;
+}
+
+
 
 /* 1370px viewport */
 @media (max-width: 1220px){
