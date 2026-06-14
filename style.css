@@ -881,7 +881,7 @@ footer {
 
   .hero-text-container {
     padding: 8px;
-    bottom: 40px;
+    bottom: 140px;
   }
 
   .gallery-track {
@@ -889,6 +889,7 @@ footer {
   }
 
   .gallery-item img {
-    height: 280px;
+    height: 220px;
+    width: 180px;
   }
 }
