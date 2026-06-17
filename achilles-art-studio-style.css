@@ -276,7 +276,7 @@ nav {
   display: flex;
   gap: 24px;
   width: max-content;
-  animation: scroll 24s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .gallery-item {
