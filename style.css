@@ -36,8 +36,8 @@ img {
   --gold-color: #FFD900;
   --gradient-bronze: linear-gradient(
     90deg,
-    #95674F 0%,
-    #383535 100%
+    #95674F 20%,
+    #383535 80%
   );
   --white: #fff;
   --black: #000;
@@ -332,10 +332,6 @@ nav {
   color: #fff;
 }
 
-.main-CTA:hover .btn-circle {
-  background:  var(--gradient-bronze);
-}
-
 .btn-circle {
   width: 6px;
   height: 6px;
@@ -345,18 +341,12 @@ nav {
 }
 
 .secondary-CTA {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.secondary-CTA:hover {
-  background-color: #ffffff00;
-  color: var(--black);
+  background: var(--white);
 }
 
 .secondary-CTA,
 .main-CTA {
-  transition: color 300ms ease, background-color 300ms ease;
+  transition: color 300ms ease, background 300ms ease;
 }
 
 .secondary-CTA:hover .btn-circle {
@@ -530,7 +520,8 @@ nav {
 
 .card-box {
   position: relative;
-  background-color: #ffd900d2;
+  background: var(--gradient-bronze);
+  color: var(--white);
   padding: 16px;
   border-radius: 8px;
 
