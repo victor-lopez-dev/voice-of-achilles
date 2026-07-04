@@ -34,6 +34,11 @@ img {
 :root {
   --background-black: #333333;
   --gold-color: #FFD900;
+  --gradient-bronze: linear-gradient(
+    90deg,
+    #95674F 0%,
+    #383535 100%
+  );
   --white: #fff;
   --black: #000;
   --artist-card-background: #f2f2f281;
@@ -214,17 +219,19 @@ nav {
   bottom: 8px;
   left: 8px;
   font-size: 12px;
-  background-color: var(--gold-color);
+  background: var(--gradient-bronze);
+  color: var(--white);
   padding: 8px;
   border-radius: var(--corner-radius);
-  transition: background-color 300ms ease;
+  transition: background 600ms ease;
   animation: show-artists 4s ease forwards;
 }
 
 .gallery-item img:hover,
 .gallery-item a:hover img,
 .gallery-item a:hover .by-artist {
-  background-color: var(--white);
+  background: var(--white);
+  color: var(--black);
 }
 
 .hands-container {
@@ -321,11 +328,12 @@ nav {
 }
 
 .main-CTA {
-  background-color: var(--gold-color);
+  background: var(--gradient-bronze);
+  color: #fff;
 }
 
 .main-CTA:hover .btn-circle {
-  background-color: var(--gold-color);
+  background:  var(--gradient-bronze);
 }
 
 .btn-circle {
